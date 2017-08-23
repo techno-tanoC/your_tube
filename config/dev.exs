@@ -35,9 +35,5 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :your_tube, YourTube.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "your_tube_dev",
-  hostname: "localhost",
-  pool_size: 10
+  adapter: Sqlite.Ecto2,
+  database: "dev.db"

@@ -11,9 +11,5 @@ config :logger, level: :warn
 
 # Configure your database
 config :your_tube, YourTube.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "your_tube_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  adapter: Sqlite.Ecto2,
+  database: "test.db"

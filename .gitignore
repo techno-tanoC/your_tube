@@ -1,3 +1,7 @@
+dev.db
+prod.db
+test.db
+
 # App artifacts
 /_build
 /db
